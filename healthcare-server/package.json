@@ -1,0 +1,91 @@
+{
+  
+  "homepage": ".",
+  
+  "name": "healthcare-server",
+  
+  "version": "1.0.0",
+  
+  "main": "index.js",
+  
+  "type": "module",
+  
+  "scripts": {
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1",
+  
+    
+  "start": "nodemon index.js",
+  
+    
+  "deploy": "yarn build && npx thirdweb@latest upload build"
+  
+  },
+  
+  "keywords": [],
+  
+  "author": "",
+  
+  "license": "ISC",
+  
+  "description": "",
+  
+  "dependencies": {
+  
+    
+  "@thirdweb-dev/sdk": "^4.0.60",
+  
+    
+  "@thirdweb-dev/storage": "^2.0.15",
+  
+    
+  "bcrypt": "^5.1.1",
+  
+    
+  "cookie-parser": "^1.4.7",
+  
+    
+  "cors": "^2.8.5",
+  
+    
+  "dotenv": "^16.4.5",
+  
+    
+  "ethers": "^5.7.2",
+  
+    
+  "express": "^4.21.1",
+  
+    
+  "express-rate-limit": "^7.4.1",
+  
+    
+  "helmet": "^7.2.0",
+  
+    
+  "ipfs-http-client": "^60.0.1",
+  
+    
+  "jsonwebtoken": "^9.0.2",
+  
+    
+  "mongoose": "^8.8.0",
+  
+    
+  "multer": "^1.4.5-lts.1",
+  
+    
+  "nodemailer": "^6.9.16",
+  
+    
+  "nodemon": "^3.1.4",
+  
+    
+  "package-lock.json": "^1.0.0",
+  
+    
+  "thirdweb": "^5.61.6"
+  
+  }
+}

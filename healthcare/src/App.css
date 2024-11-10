@@ -1,0 +1,349 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f7;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Home Container */
+.home-container, .Sign-up-container, .Upload-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(120deg, #007BFF, #4CAF50);
+  padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.auth-buttons button {
+  padding: 12px 25px;
+  background-color: #ffffff;
+  color: #007BFF;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.auth-buttons .logout-btn {
+  background-color: #FF5733;
+  color: white;
+}
+
+.auth-buttons button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 1200px;
+  z-index: 0;
+}
+
+.main-content section {
+  margin-bottom: 40px;
+}
+
+.main-content h2 {
+  color: #007BFF;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover img {
+  transform: scale(1.05);
+}
+
+.service-item h3 {
+  color: #4CAF50;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+}
+
+/* Team Section */
+.our-team {
+  margin-bottom: 50px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.05);
+}
+/* Forms */
+.sign-up-form, .upload-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.sign-up-form h2, .upload-form h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button {
+  width: 55%;
+  padding: 12px;
+  margin-right:  3px;
+  margin-left: 3px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+/* Footer Styles */
+footer {
+  padding: 20px;
+  background-color: #007BFF;
+  text-align: center;
+  color: white;
+}
+
+footer nav {
+  margin-top: 10px;
+}
+
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .service-item {
+    flex-direction: column;
+  }
+
+  .service-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .our-team {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .auth-buttons button {
+    padding: 10px 15px;
+  }
+
+  .main-content {
+    margin: 20px 10px;
+  }
+}
+.password-strength {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.password-strength.strong {
+  color: green;
+}
+
+.password-strength.medium {
+  color: orange;
+}
+
+.password-strength.weak,
+.password-strength.short {
+  color: red;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+.patient-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.patient-card {
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.patient-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

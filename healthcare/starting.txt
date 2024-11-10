@@ -1,0 +1,5 @@
+ cd D:\Software_project\healthcare                                                     
+ npm run dev
+
+cd D:\Software_project\healthcare-server                                              
+ npm start
